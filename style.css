@@ -1,0 +1,250 @@
+body {
+    background: #1e1e1e;
+    color: #eee;
+    font-family: system-ui, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 600px;
+    background: #2c2c2c;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.quote {
+    font-size: 20px;
+    line-height: 1.6;
+    background: #333;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    white-space: pre-wrap;
+    min-height: 80px;
+}
+
+.input {
+    width: 100%;
+    height: 90px;
+    padding: 12px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+    background: #444;
+    color: #fff;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background: #4caf50;
+    color: white;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: default;
+}
+
+.correct {
+    color: #81c784;
+}
+
+.incorrect {
+    color: #e57373;
+    text-decoration: underline;
+}
+
+#message {
+    margin-top: 8px;
+    min-height: 24px;
+    text-align: center;
+}
+
+#ranking-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+#ranking-list li {
+    padding: 4px 0;
+    font-size: 14px;
+}
+.difficulty {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.diff-btn {
+    padding: 6px 12px;
+    font-size: 13px;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    background: #444;
+    color: #eee;
+}
+
+.diff-btn.active {
+    background: #4caf50;
+    color: #fff;
+}
+/* 기본은 보통(normal) 테마 */
+body.level-normal .container {
+    background: #2c2c2c;
+}
+
+/* 쉬움: 조금 더 밝은 초록 느낌 */
+body.level-easy #start-btn {
+    background: #66bb6a;
+}
+body.level-easy .container {
+    background: #294029;
+}
+body.level-easy .diff-btn.active {
+    background: #81c784;
+}
+
+/* 어려움: 붉은 계열 */
+body.level-hard #start-btn {
+    background: #ef5350;
+}
+body.level-hard .container {
+    background: #3a2222;
+}
+body.level-hard .diff-btn.active {
+    background: #e57373;
+}
+
+/* ===== 인증 페이지 공통 스타일 ===== */
+
+.auth-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111; /* 메인 페이지와 맞추기 */
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.auth-card {
+    width: 420px;
+    background: #1f1f1f;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    padding: 28px 32px 24px;
+}
+
+.auth-title {
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.auth-subtitle {
+    font-size: 13px;
+    text-align: center;
+    color: #aaaaaa;
+    margin-bottom: 24px;
+}
+
+.auth-form-group {
+    margin-bottom: 16px;
+}
+
+.auth-label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 6px;
+    color: #cccccc;
+}
+
+.auth-input {
+    width: 100%;
+    padding: 9px 10px;
+    border-radius: 6px;
+    border: 1px solid #444;
+    background: #151515;
+    color: #f5f5f5;
+    font-size: 14px;
+}
+
+.auth-input:focus {
+    outline: none;
+    border-color: #4caf50;
+    box-shadow: 0 0 0 1px rgba(76,175,80,0.5);
+}
+
+.auth-btn-primary {
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    background: #4caf50;
+    color: #fff;
+}
+
+.auth-btn-primary:hover {
+    background: #43a047;
+}
+
+.auth-message {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.auth-message.error {
+    color: #ff6b6b;
+}
+
+.auth-message.success {
+    color: #81c784;
+}
+
+.auth-links {
+    margin-top: 16px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.auth-links a {
+    color: #9bdc9b;
+    text-decoration: none;
+}
+
+.auth-links a:hover {
+    text-decoration: underline;
+}
+

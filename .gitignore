@@ -1,0 +1,13 @@
+# 민감한 파일
+db.php
+
+# IDE 관련
+.idea/
+*.iml
+
+# 시스템 파일
+.DS_Store
+Thumbs.db
+
+# 로그 파일
+*.log
