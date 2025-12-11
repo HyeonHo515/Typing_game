@@ -63,7 +63,7 @@ PHP + MySQL 기반으로 제작된 타자 연습 웹사이트입니다.
 
 ## 🛠️ 설치 및 실행 (Installation)
 
-### 1️⃣ 저장소 클론
+### 저장소 클론
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
@@ -73,7 +73,7 @@ $pass = 'YOUR_DB_PASSWORD';
 $db   = 'typing_game';
 $port = 'port_number'; //만약 localhost라면 없어도 되는 부분 
 
-3️⃣ MySQL에서 아래 테이블 생성
+ MySQL에서 아래 테이블 생성
 📌 users 테이블
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
