@@ -45,19 +45,20 @@ PHP + MySQL 기반으로 제작된 타자 연습 웹사이트입니다.
 
 ## 📁 프로젝트 구조 (Project Structure)
 
+```plaintext
 /typing_gm
-├── index.php # 메인 타자 연습 페이지
-├── login.php # 로그인 페이지
-├── register.php # 회원가입 페이지
-├── logout.php # 로그아웃 처리
-├── auth.php # 로그인 세션 처리
-├── save_score.php # 기록 저장 API
-├── get_scores.php # 기록 조회 API
-├── game.js # 타자 게임 로직
-├── style.css # UI 스타일
-├── db.php # DB 연결 (Git에 업로드되지 않음)
-├── db.sample.php # DB 연결 예시 파일
-└── .gitignore # 민감 정보 / IDE 파일 제거
+├── index.php          # 메인 타자 연습 페이지
+├── login.php          # 로그인 페이지
+├── register.php       # 회원가입 페이지
+├── logout.php         # 로그아웃 처리
+├── auth.php           # 로그인 세션 처리
+├── save_score.php     # 기록 저장 API
+├── get_scores.php     # 기록 조회 API
+├── game.js            # 타자 게임 로직
+├── style.css          # UI 스타일
+├── db.php             # 실제 DB 연결 (Git에 업로드되지 않음)
+├── db.sample.php      # DB 연결 예시 파일
+└── .gitignore         # 민감 정보 / IDE 파일 제거
 
 ---
 
